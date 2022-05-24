@@ -1,3 +1,4 @@
+# Bronze I
 n = int(input())
 
 queue = []
