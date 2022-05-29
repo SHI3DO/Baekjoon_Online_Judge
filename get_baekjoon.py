@@ -46,21 +46,21 @@ def get_baekjoon(num):
             except Exception as e:
                 print(e)
                 continue
-        return_text += "\n\n **IN**"
+        return_text += "\n\n **IN** \n"
         for i in input_description:
             try:
                 return_text += i.text.strip() + "\n"
             except Exception as e:
                 print(e)
                 continue
-        return_text += "\n\n **OUT**"
+        return_text += "\n\n **OUT** \n"
         for i in output_description:
             try:
                 return_text += i.text.strip() + "\n"
             except Exception as e:
                 print(e)
                 continue
-        return_text += "\n\n **EXAMPLE**\n"
+        return_text += "\n\n **EXAMPLE** \n"
         for i in range(len(sample_i)):
             return_text += f"## IN {i+1} ###"+"\n"
             try:
