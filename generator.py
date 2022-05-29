@@ -18,6 +18,7 @@ if not os.path.isdir(f"./{n}"):
         f.close()
         print(f"{n}.md 생성완료")
     else:
+        print("최소합니다.")
         sys.exit()
 else:
     print("파일이 이미 있습니다.")

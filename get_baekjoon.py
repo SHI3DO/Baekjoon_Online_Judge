@@ -6,6 +6,7 @@ request_headers = {
 AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98\
 Safari/537.36'), }
 
+
 def get_baekjoon(num):
     base = 'https://www.acmicpc.net/problem/'
     url = base + num
@@ -62,7 +63,7 @@ def get_baekjoon(num):
                 continue
         return_text += "\n\n **EXAMPLE** \n"
         for i in range(len(sample_i)):
-            return_text += f"## IN {i+1} ###"+"\n"
+            return_text += f"## IN {i + 1} ###" + "\n"
             try:
                 return_text += sample_i[i].text.strip() + "\n"
             except Exception as e:
